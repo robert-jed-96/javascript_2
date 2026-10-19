@@ -1,0 +1,45 @@
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+/* 1. CSS NORMALIZATION BASELINE */
+*, *::before, *::after {
+    box-sizing: border-box; /* Normalizes sizing behaviors */
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh; /* Ensures background stretches the full viewport height */
+    font-family: "Roboto", sans-serif;
+
+    background-image: conic-gradient(from var(--angle), red, blue, red);
+    animation: 5s spin linear infinite;
+}
+
+@keyframes spin{
+
+    from{
+        --angle: 0deg;
+    }
+
+    to{
+        --angle: 360deg;
+    }
+
+}
+
+h1 {
+    color: darkblue;
+    margin-left: 1rem;
+}
+
+details {
+    color: #000000;
+    background-color: gainsboro;
+    max-width: 15rem;
+    margin-left: 1rem;
+}
