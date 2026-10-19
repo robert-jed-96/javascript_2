@@ -56,7 +56,7 @@ let word = "    Rob     ";
 console.log(word);
 console.log(word.trim());
 
-let words = "           Rob Aleks Polskswensk          "
+let words = "           Rob Aleks Polskswensk          ";
 console.log(words);
 console.log(words.trim());
 
